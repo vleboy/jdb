@@ -70,7 +70,7 @@
             // 
             this.列表模式ToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.列表模式ToolStripMenuItem.Name = "列表模式ToolStripMenuItem";
-            this.列表模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.列表模式ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.列表模式ToolStripMenuItem.Tag = "list";
             this.列表模式ToolStripMenuItem.Text = "列表模式";
             this.列表模式ToolStripMenuItem.Click += new System.EventHandler(this.列表模式ToolStripMenuItem_Click);
@@ -78,7 +78,7 @@
             // 地图模式ToolStripMenuItem
             // 
             this.地图模式ToolStripMenuItem.Name = "地图模式ToolStripMenuItem";
-            this.地图模式ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.地图模式ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.地图模式ToolStripMenuItem.Tag = "map";
             this.地图模式ToolStripMenuItem.Text = "地图模式";
             this.地图模式ToolStripMenuItem.Click += new System.EventHandler(this.地图模式ToolStripMenuItem_Click);

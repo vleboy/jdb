@@ -220,7 +220,7 @@ namespace jdb
             }
             else
             {
-                sqlcmd += "WHERE population.educational = '党员' AND  district.id = '1'";
+               // sqlcmd += "WHERE population.educational = '党员' AND  district.id = '1'";
               
             }
             dgv.DataSource = db.GetDataSet(sqlcmd, "t").Tables["t"];
@@ -299,6 +299,14 @@ namespace jdb
         private void 返回ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void 添加人员ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            CommonUse commUse = new CommonUse();
+            var x = (ToolStripMenuItem)sender;
+
+            commUse.ShowForm(x.Tag.ToString(), this.main,null);
         }
     }
 }

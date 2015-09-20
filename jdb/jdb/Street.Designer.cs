@@ -83,8 +83,8 @@ namespace jdb.ComClass
             this.laHouseTitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.jmxz = new System.Windows.Forms.Label();
+            this.laTitle = new System.Windows.Forms.Label();
             this.black.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,13 +141,14 @@ namespace jdb.ComClass
             this.black.Controls.Add(this.laHouseTitle);
             this.black.Controls.Add(this.button1);
             this.black.Controls.Add(this.label3);
-            this.black.Controls.Add(this.label2);
-            this.black.Controls.Add(this.label1);
+            this.black.Controls.Add(this.jmxz);
+            this.black.Controls.Add(this.laTitle);
             this.black.Dock = System.Windows.Forms.DockStyle.Fill;
             this.black.Location = new System.Drawing.Point(0, 0);
             this.black.Name = "black";
             this.black.Size = new System.Drawing.Size(1904, 1041);
             this.black.TabIndex = 0;
+            this.black.Tag = "1";
             // 
             // shujiValue
             // 
@@ -155,9 +156,9 @@ namespace jdb.ComClass
             this.shujiValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.shujiValue.Location = new System.Drawing.Point(556, 372);
             this.shujiValue.Name = "shujiValue";
-            this.shujiValue.Size = new System.Drawing.Size(191, 38);
+            this.shujiValue.Size = new System.Drawing.Size(46, 38);
             this.shujiValue.TabIndex = 286;
-            this.shujiValue.Text = "党支部书记：";
+            this.shujiValue.Text = "无";
             // 
             // dangValue
             // 
@@ -165,9 +166,9 @@ namespace jdb.ComClass
             this.dangValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dangValue.Location = new System.Drawing.Point(556, 299);
             this.dangValue.Name = "dangValue";
-            this.dangValue.Size = new System.Drawing.Size(191, 38);
+            this.dangValue.Size = new System.Drawing.Size(46, 38);
             this.dangValue.TabIndex = 285;
-            this.dangValue.Text = "党支部书记：";
+            this.dangValue.Text = "无";
             // 
             // laCommunityPopulationValue
             // 
@@ -663,9 +664,9 @@ namespace jdb.ComClass
             this.laYardValue.Location = new System.Drawing.Point(517, 446);
             this.laYardValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laYardValue.Name = "laYardValue";
-            this.laYardValue.Size = new System.Drawing.Size(85, 38);
+            this.laYardValue.Size = new System.Drawing.Size(34, 38);
             this.laYardValue.TabIndex = 246;
-            this.laYardValue.Text = "0000";
+            this.laYardValue.Text = "1";
             // 
             // laYardTitle
             // 
@@ -747,25 +748,25 @@ namespace jdb.ComClass
             this.label3.TabIndex = 2;
             this.label3.Text = "党支部书记：";
             // 
-            // label2
+            // jmxz
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(331, 372);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 38);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "居民小组长：";
+            this.jmxz.AutoSize = true;
+            this.jmxz.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.jmxz.Location = new System.Drawing.Point(331, 372);
+            this.jmxz.Name = "jmxz";
+            this.jmxz.Size = new System.Drawing.Size(191, 38);
+            this.jmxz.TabIndex = 1;
+            this.jmxz.Text = "居民小组长：";
             // 
-            // label1
+            // laTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(828, 208);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "院落名称";
+            this.laTitle.AutoSize = true;
+            this.laTitle.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.laTitle.Location = new System.Drawing.Point(828, 208);
+            this.laTitle.Name = "laTitle";
+            this.laTitle.Size = new System.Drawing.Size(160, 46);
+            this.laTitle.TabIndex = 0;
+            this.laTitle.Text = "院落名称";
             // 
             // Street
             // 
@@ -785,8 +786,8 @@ namespace jdb.ComClass
 
         private System.Windows.Forms.Panel black;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label jmxz;
+        private System.Windows.Forms.Label laTitle;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label laCommunityPopulationValue;
         private System.Windows.Forms.Label laReleaseValue;

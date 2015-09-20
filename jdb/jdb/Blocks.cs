@@ -26,12 +26,12 @@ namespace jdb
 
         private void Blocks_Load(object sender, EventArgs e)
         {
-            gridid = (Convert.ToInt16(this.grid) +( -1*(Convert.ToInt16(this.district)-1)) + (10 * (Convert.ToInt16(this.district))) - 10).ToString();
+            gridid = (Convert.ToInt16(this.grid) +( -1*((Convert.ToInt16(this.district)-1) > 0 ?1:0 )) + (10 * (Convert.ToInt16(this.district))) - 10).ToString();
             this.grid = gridid;
             string s = null;
             this.ControlBox = false;
             s = s + db.GetSingleObject("SELECT grid.`name` FROM grid INNER JOIN district ON grid.district = district.id WHERE district.id = "+this.district+" AND grid.id = " + gridid);
-            this.laTitle.Text = s;
+            this.laTitle.Text = s+"汇总表";
             addGrids();
             laResponsibleValue.Text = db.GetSingleObject("SELECT blockmanager.manager FROM grid INNER JOIN block ON block.grid = grid.id INNER JOIN blockmanager ON grid.block_manager = blockmanager.id AND block.block_manager = blockmanager.id WHERE grid.id = " + gridid).ToString();
             laPoliceValue.Text = db.GetSingleObject("SELECT blockmanager.police FROM grid INNER JOIN block ON block.grid = grid.id INNER JOIN blockmanager ON grid.block_manager = blockmanager.id AND block.block_manager = blockmanager.id WHERE grid.id = " + gridid).ToString();

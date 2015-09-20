@@ -8,6 +8,11 @@ using System.Windows.Forms;
 using jdb.dataClass;
 using jdb.sundries;
 using System.Threading;
+using jdb.Map;
+using jdb.Map._01草堂;
+using jdb.Map._02琴台;
+using jdb.Map._04送仙桥;
+using jdb.Map._03芳邻;
 
 namespace jdb.ComClass
 {
@@ -159,25 +164,38 @@ namespace jdb.ComClass
                         ListppmanagerEG.Show();
                     }
                     break;
+                case "add"://列表
+                    {
+                        addusr add = new addusr();
+                        add.MdiParent = form;
+                        add.StartPosition = FormStartPosition.CenterScreen;
+                        add.Tag = ob;
+                        add.WindowState = FormWindowState.Normal;
+                        add.main = form;
+                        add.Show();
+                    }
+                break;
+                case "map"://列表
+                    {
+                        MapMainForm MapMain = new MapMainForm();
+                        MapMain.MdiParent = form;
+                        MapMain.StartPosition = FormStartPosition.CenterScreen;
+                        MapMain.Tag = ob;
+                        MapMain.WindowState = FormWindowState.Maximized;
+                        MapMain.main = form;
+                        MapMain.Show();
+                    }
+                    break;
+                
             }
         }
-        public void ShowForm(string ob, Form form)
+        public void ShowForm(string ob, Main form)
         {
             switch (ob)
             {
-                
-                
-                //case "map"://列表
-                //    {
-                //        MapMainForm MapMain = new MapMainForm();
-                //        MapMain.MdiParent = form;
-                //        MapMain.StartPosition = FormStartPosition.CenterScreen;
-                //        MapMain.Tag = ob;
-                //        MapMain.WindowState = FormWindowState.Maximized;
-                //        MapMain.main = form;
-                //        MapMain.Show();
-                //    }
-                //    break;
+
+
+
                 //case "manager"://列表
                 //    {
                 //        ppmanager appmanager = new ppmanager();
@@ -223,121 +241,495 @@ namespace jdb.ComClass
                 //        Ctl.Show();
 
 
-                    //    }
-                    //    break;
+                //    }
+                //    break;
 
 
-                    //case "ct_grid_1":
-                    //    {
-                    //        map_ct_grids map = new map_ct_grids();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_1":
-                    //    {
-                    //        map_ct_grids_1 map = new map_ct_grids_1();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_2":
-                    //    {
-                    //        map_ct_grids_2 map = new map_ct_grids_2();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_3":
-                    //    {
-                    //        map_ct_grids_3 map = new map_ct_grids_3();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_4":
-                    //    {
-                    //        map_ct_grids_4 map = new map_ct_grids_4();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_5":
-                    //    {
-                    //        map_ct_grids_5 map = new map_ct_grids_5();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_6":
-                    //    {
-                    //        map_ct_grids_6 map = new map_ct_grids_6();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_7":
-                    //    {
-                    //        map_ct_grids_7 map = new map_ct_grids_7();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_8":
-                    //    {
-                    //        map_ct_grids_8 map = new map_ct_grids_8();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "ct_blocks_9":
-                    //    {
-                    //        map_ct_grids_9 map = new map_ct_grids_9();
-                    //        map.MdiParent = form;
-                    //        map.StartPosition = FormStartPosition.CenterScreen;
-                    //        map.Tag = ob;
-                    //        map.WindowState = FormWindowState.Normal;
-                    //        map.main = form;
-                    //        map.Show();
-                    //    }
-                    //    break;
-                    //case "info_grid_1":
+                case "ct_grid_1":
+                    {
+                        map_ct_grids map = new map_ct_grids();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_grid_1":
+                    {
+                        map_qt_grids map = new map_qt_grids();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_grid_1":
+                    {
+                        map_fl_grids map = new map_fl_grids();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_grid_1":
+                    {
+                        map_sxq_grids map = new map_sxq_grids();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                //case "fl_grid_1":
+                //    {
+                //        map_qt_grids map = new map_qt_grids();
+                //        map.MdiParent = form;
+                //        map.StartPosition = FormStartPosition.CenterScreen;
+                //        map.Tag = ob;
+                //        map.WindowState = FormWindowState.Normal;
+                //        map.main = form;
+                //        map.Show();
+                //    }
+                //    break;
+                case "ct_blocks_1":
+                    {
+                        map_ct_grid_1 map = new map_ct_grid_1();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_1":
+                    {
+                        map_qt_grid_1 map = new map_qt_grid_1();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_1":
+                    {
+                        map_fl_grid_1 map = new map_fl_grid_1();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_1":
+                    {
+                        map_sxq_grid_1 map = new map_sxq_grid_1();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_2":
+                    {
+                        map_ct_grid_2 map = new map_ct_grid_2();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_2":
+                    {
+                        map_qt_grid_2 map = new map_qt_grid_2();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_2":
+                    {
+                        map_fl_grid_2 map = new map_fl_grid_2();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_2":
+                    {
+                        map_sxq_grid_2 map = new map_sxq_grid_2();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_3":
+                    {
+                        map_ct_grid_3 map = new map_ct_grid_3();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_3":
+                    {
+                        map_qt_grid_3 map = new map_qt_grid_3();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_3":
+                    {
+                        map_fl_grid_3 map = new map_fl_grid_3();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_3":
+                    {
+                        map_sxq_grid_3 map = new map_sxq_grid_3();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_4":
+                    {
+                        map_ct_grid_4 map = new map_ct_grid_4();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_4":
+                    {
+                        map_qt_grid_4 map = new map_qt_grid_4();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_4":
+                    {
+                        map_fl_grid_4 map = new map_fl_grid_4();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_4":
+                    {
+                        map_sxq_grid_4 map = new map_sxq_grid_4();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_5":
+                    {
+                        map_ct_grid_5 map = new map_ct_grid_5();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_5":
+                    {
+                        map_qt_grid_5 map = new map_qt_grid_5();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_5":
+                    {
+                        map_fl_grid_5 map = new map_fl_grid_5();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_5":
+                    {
+                        map_sxq_grid_5 map = new map_sxq_grid_5();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_6":
+                    {
+                        map_ct_grid_6 map = new map_ct_grid_6();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_6":
+                    {
+                        map_qt_grid_6 map = new map_qt_grid_6();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_6":
+                    {
+                        map_fl_grid_6 map = new map_fl_grid_6();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_6":
+                    {
+                        map_sxq_grid_6 map = new map_sxq_grid_6();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_7":
+                    {
+                        map_ct_grid_7 map = new map_ct_grid_7();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_7":
+                    {
+                        map_qt_grid_7 map = new map_qt_grid_7();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_7":
+                    {
+                        map_fl_grid_7 map = new map_fl_grid_7();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_7":
+                    {
+                        map_sxq_grid_7 map = new map_sxq_grid_7();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_8":
+                    {
+                        map_ct_grid_8 map = new map_ct_grid_8();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_8":
+                    {
+                        map_qt_grid_8 map = new map_qt_grid_8();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_8":
+                    {
+                        map_fl_grid_8 map = new map_fl_grid_8();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_8":
+                    {
+                        map_sxq_grid_8 map = new map_sxq_grid_8();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "ct_blocks_9":
+                    {
+                        map_ct_grid_9 map = new map_ct_grid_9();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_9":
+                    {
+                        map_qt_grid_9 map = new map_qt_grid_9();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_9":
+                    {
+                        map_fl_grid_9 map = new map_fl_grid_9();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_9":
+                    {
+                        map_sxq_grid_9 map = new map_sxq_grid_9();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "qt_blocks_10":
+                    {
+                        map_qt_grid_10 map = new map_qt_grid_10();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "fl_blocks_10":
+                    {
+                        map_fl_grid_10 map = new map_fl_grid_10();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                case "sxq_blocks_10":
+                    {
+                        map_sxq_grid_10 map = new map_sxq_grid_10();
+                        map.MdiParent = form;
+                        map.StartPosition = FormStartPosition.CenterScreen;
+                        map.Tag = ob;
+                        map.WindowState = FormWindowState.Normal;
+                        map.main = form;
+                        map.Show();
+                    }
+                    break;
+                    //case "info_grid_10":
                     //    {
                     //        ListCtlNetForm1 Ctl1 = new ListCtlNetForm1();
                     //        Ctl1.MdiParent = form;
@@ -1804,25 +2196,29 @@ namespace jdb.ComClass
             //     sdr.Close();
             //     cb_block.DataSource = items;
 
-            string sqlcmd = "SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = ";
+            string sqlcmd = "SELECT grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = ";
             sqlcmd = sqlcmd.Replace("grid", from2);
             sqlcmd = sqlcmd.Replace("district", from1);
 
             string index = null;
             List<item> items = new List<item>();
             MySqlDataReader sdr;
-            item it = (item)cb1.SelectedItem;
-            index = it.Value;
-
-            // sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
-            sdr = db.GetDataReader(sqlcmd + index);
-            while (sdr.Read())
+            if (cb1.SelectedItem != null)
             {
-                item its = new item(sdr[0].ToString(), sdr[1].ToString());
-                items.Add(its);
+                item it = (item)cb1.SelectedItem;
+                index = it.Value;
+
+                // sdr = db.GetDataReader("SELECT 	grid.`name`,grid.id FROM district INNER JOIN grid ON grid.district = district.id WHERE district.id = " + index);
+                sdr = db.GetDataReader(sqlcmd + index);
+                while (sdr.Read())
+                {
+                    item its = new item(sdr[0].ToString(), sdr[1].ToString());
+                    items.Add(its);
+                }
+                sdr.Close();
+                cb2.DataSource = items;
             }
-            sdr.Close();
-            cb2.DataSource = items;
+            
         }
 
         public void load_district(ComboBox district, ComboBox grid, ComboBox block)

@@ -47,8 +47,17 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TM2">
+      <HintPath>E:\项目\TM\TM\bin\Debug\TM2.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addusr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addusr.Designer.cs">
+      <DependentUpon>addusr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Blocks.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +65,270 @@
       <DependentUpon>Blocks.cs</DependentUpon>
     </Compile>
     <Compile Include="ComClass\CommonUse.cs" />
+    <Compile Include="Map\01草堂\map_ct_grids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grids.Designer.cs">
+      <DependentUpon>map_ct_grids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_1.Designer.cs">
+      <DependentUpon>map_ct_grid_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_2.Designer.cs">
+      <DependentUpon>map_ct_grid_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_3.Designer.cs">
+      <DependentUpon>map_ct_grid_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_4.Designer.cs">
+      <DependentUpon>map_ct_grid_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_5.Designer.cs">
+      <DependentUpon>map_ct_grid_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_6.Designer.cs">
+      <DependentUpon>map_ct_grid_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_7.Designer.cs">
+      <DependentUpon>map_ct_grid_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_8.Designer.cs">
+      <DependentUpon>map_ct_grid_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\01草堂\map_ct_grid_9.Designer.cs">
+      <DependentUpon>map_ct_grid_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grids.Designer.cs">
+      <DependentUpon>map_qt_grids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_1.Designer.cs">
+      <DependentUpon>map_qt_grid_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_10.Designer.cs">
+      <DependentUpon>map_qt_grid_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_2.Designer.cs">
+      <DependentUpon>map_qt_grid_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_3.Designer.cs">
+      <DependentUpon>map_qt_grid_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_4.Designer.cs">
+      <DependentUpon>map_qt_grid_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_5.Designer.cs">
+      <DependentUpon>map_qt_grid_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_6.Designer.cs">
+      <DependentUpon>map_qt_grid_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_7.Designer.cs">
+      <DependentUpon>map_qt_grid_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_8.Designer.cs">
+      <DependentUpon>map_qt_grid_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\02琴台\map_qt_grid_9.Designer.cs">
+      <DependentUpon>map_qt_grid_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grids.Designer.cs">
+      <DependentUpon>map_fl_grids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_1.Designer.cs">
+      <DependentUpon>map_fl_grid_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_10.Designer.cs">
+      <DependentUpon>map_fl_grid_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_2.Designer.cs">
+      <DependentUpon>map_fl_grid_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_3.Designer.cs">
+      <DependentUpon>map_fl_grid_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_4.Designer.cs">
+      <DependentUpon>map_fl_grid_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_5.Designer.cs">
+      <DependentUpon>map_fl_grid_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_6.Designer.cs">
+      <DependentUpon>map_fl_grid_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_7.Designer.cs">
+      <DependentUpon>map_fl_grid_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_8.Designer.cs">
+      <DependentUpon>map_fl_grid_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\03芳邻\map_fl_grid_9.Designer.cs">
+      <DependentUpon>map_fl_grid_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grids.Designer.cs">
+      <DependentUpon>map_sxq_grids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_1.Designer.cs">
+      <DependentUpon>map_sxq_grid_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_10.Designer.cs">
+      <DependentUpon>map_sxq_grid_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_2.Designer.cs">
+      <DependentUpon>map_sxq_grid_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_3.Designer.cs">
+      <DependentUpon>map_sxq_grid_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_4.Designer.cs">
+      <DependentUpon>map_sxq_grid_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_5.Designer.cs">
+      <DependentUpon>map_sxq_grid_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_6.Designer.cs">
+      <DependentUpon>map_sxq_grid_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_7.Designer.cs">
+      <DependentUpon>map_sxq_grid_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_8.Designer.cs">
+      <DependentUpon>map_sxq_grid_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\04送仙桥\map_sxq_grid_9.Designer.cs">
+      <DependentUpon>map_sxq_grid_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map\MapMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\MapMainForm.Designer.cs">
+      <DependentUpon>MapMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ppmanager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,8 +372,143 @@
     <Compile Include="sundries\item.cs" />
     <Compile Include="sundries\PropetyClass.cs" />
     <Compile Include="sundries\map.cs" />
+    <EmbeddedResource Include="addusr.resx">
+      <DependentUpon>addusr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Blocks.resx">
       <DependentUpon>Blocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grids.resx">
+      <DependentUpon>map_ct_grids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_1.resx">
+      <DependentUpon>map_ct_grid_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_2.resx">
+      <DependentUpon>map_ct_grid_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_3.resx">
+      <DependentUpon>map_ct_grid_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_4.resx">
+      <DependentUpon>map_ct_grid_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_5.resx">
+      <DependentUpon>map_ct_grid_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_6.resx">
+      <DependentUpon>map_ct_grid_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_7.resx">
+      <DependentUpon>map_ct_grid_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_8.resx">
+      <DependentUpon>map_ct_grid_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\01草堂\map_ct_grid_9.resx">
+      <DependentUpon>map_ct_grid_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grids.resx">
+      <DependentUpon>map_qt_grids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_1.resx">
+      <DependentUpon>map_qt_grid_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_10.resx">
+      <DependentUpon>map_qt_grid_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_2.resx">
+      <DependentUpon>map_qt_grid_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_3.resx">
+      <DependentUpon>map_qt_grid_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_4.resx">
+      <DependentUpon>map_qt_grid_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_5.resx">
+      <DependentUpon>map_qt_grid_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_6.resx">
+      <DependentUpon>map_qt_grid_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_7.resx">
+      <DependentUpon>map_qt_grid_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_8.resx">
+      <DependentUpon>map_qt_grid_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\02琴台\map_qt_grid_9.resx">
+      <DependentUpon>map_qt_grid_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grids.resx">
+      <DependentUpon>map_fl_grids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_1.resx">
+      <DependentUpon>map_fl_grid_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_10.resx">
+      <DependentUpon>map_fl_grid_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_2.resx">
+      <DependentUpon>map_fl_grid_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_3.resx">
+      <DependentUpon>map_fl_grid_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_4.resx">
+      <DependentUpon>map_fl_grid_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_5.resx">
+      <DependentUpon>map_fl_grid_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_6.resx">
+      <DependentUpon>map_fl_grid_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_7.resx">
+      <DependentUpon>map_fl_grid_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_8.resx">
+      <DependentUpon>map_fl_grid_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\03芳邻\map_fl_grid_9.resx">
+      <DependentUpon>map_fl_grid_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grids.resx">
+      <DependentUpon>map_sxq_grids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_1.resx">
+      <DependentUpon>map_sxq_grid_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_10.resx">
+      <DependentUpon>map_sxq_grid_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_2.resx">
+      <DependentUpon>map_sxq_grid_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_3.resx">
+      <DependentUpon>map_sxq_grid_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_4.resx">
+      <DependentUpon>map_sxq_grid_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_5.resx">
+      <DependentUpon>map_sxq_grid_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_6.resx">
+      <DependentUpon>map_sxq_grid_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_7.resx">
+      <DependentUpon>map_sxq_grid_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_8.resx">
+      <DependentUpon>map_sxq_grid_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\04送仙桥\map_sxq_grid_9.resx">
+      <DependentUpon>map_sxq_grid_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\MapMainForm.resx">
+      <DependentUpon>MapMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ppmanager.resx">
       <DependentUpon>ppmanager.cs</DependentUpon>
@@ -291,6 +699,7 @@
   <ItemGroup>
     <None Include="Resources\back2%281%29.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

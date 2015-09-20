@@ -20,12 +20,18 @@ namespace jdb
 
         private void 列表模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            CommonUse commUse = new CommonUse();
+            var x = (ToolStripMenuItem)sender;
+
+            commUse.ShowForm(x.Tag.ToString(), this,null);
         }
 
         private void 地图模式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            CommonUse commUse = new CommonUse();
+            var x = (ToolStripMenuItem)sender;
 
+            commUse.ShowForm(x.Tag.ToString(), this,null);
         }
         protected override CreateParams CreateParams
 
