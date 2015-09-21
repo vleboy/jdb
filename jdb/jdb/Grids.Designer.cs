@@ -34,6 +34,7 @@ namespace jdb
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grids));
             this.black = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.laReleaseValue = new System.Windows.Forms.Label();
@@ -908,6 +909,7 @@ namespace jdb
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.black);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Grids";
             this.Text = "Grids";
             this.Load += new System.EventHandler(this.Grids_Load);

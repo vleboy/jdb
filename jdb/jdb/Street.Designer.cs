@@ -34,6 +34,7 @@ namespace jdb.ComClass
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Street));
             this.black = new System.Windows.Forms.Panel();
             this.shujiValue = new System.Windows.Forms.Label();
             this.dangValue = new System.Windows.Forms.Label();
@@ -774,6 +775,7 @@ namespace jdb.ComClass
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.black);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Street";
             this.Load += new System.EventHandler(this.Street_Load);
             this.black.ResumeLayout(false);

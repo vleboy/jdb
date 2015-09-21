@@ -34,6 +34,7 @@ namespace jdb
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Districk));
             this.black = new System.Windows.Forms.Panel();
             this.laCommunityPopulationValue = new System.Windows.Forms.Label();
             this.laReleaseValue = new System.Windows.Forms.Label();
@@ -733,7 +734,7 @@ namespace jdb
             this.laNetRange.Name = "laNetRange";
             this.laNetRange.Size = new System.Drawing.Size(162, 38);
             this.laNetRange.TabIndex = 14;
-            this.laNetRange.Text = "网络范围：";
+            this.laNetRange.Text = "社区名称：";
             // 
             // laBgszrName
             // 
@@ -796,6 +797,7 @@ namespace jdb
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.black);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Districk";
             this.Text = "Districk";
             this.Load += new System.EventHandler(this.Districk_Load);

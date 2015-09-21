@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addusr));
             this.black = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
@@ -1580,6 +1581,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1001);
             this.Controls.Add(this.black);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "addusr";
             this.Text = "addusr";
             this.Load += new System.EventHandler(this.addusr_Load);

@@ -34,6 +34,7 @@ namespace jdb
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Blocks));
             this.black = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -291,7 +292,7 @@ namespace jdb
             this.laResponsibleTitle.Name = "laResponsibleTitle";
             this.laResponsibleTitle.Size = new System.Drawing.Size(133, 38);
             this.laResponsibleTitle.TabIndex = 196;
-            this.laResponsibleTitle.Text = "责任人：";
+            this.laResponsibleTitle.Text = "网格员：";
             // 
             // laTitle
             // 
@@ -867,6 +868,7 @@ namespace jdb
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.black);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Blocks";
             this.Load += new System.EventHandler(this.Blocks_Load);
             this.black.ResumeLayout(false);
