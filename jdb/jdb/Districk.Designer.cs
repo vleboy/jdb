@@ -799,7 +799,6 @@ namespace jdb
             this.Controls.Add(this.black);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Districk";
-            this.Text = "Districk";
             this.Load += new System.EventHandler(this.Districk_Load);
             this.black.ResumeLayout(false);
             this.black.PerformLayout();

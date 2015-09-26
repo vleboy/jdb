@@ -1,8 +1,9 @@
 ﻿namespace jdb
 {
-    partial class addusr
+    partial class editusr
     {
         public Main main = null;
+        public string pid = null;
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,7 +30,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addusr));
             this.black = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
@@ -197,7 +197,7 @@
             this.black.Location = new System.Drawing.Point(0, 0);
             this.black.Name = "black";
             this.black.Size = new System.Drawing.Size(1904, 1001);
-            this.black.TabIndex = 0;
+            this.black.TabIndex = 1;
             // 
             // close
             // 
@@ -1122,6 +1122,7 @@
             this.tb_xjdz.Name = "tb_xjdz";
             this.tb_xjdz.Size = new System.Drawing.Size(940, 35);
             this.tb_xjdz.TabIndex = 28;
+            this.tb_xjdz.Text = "四川省成都市";
             // 
             // la_xjdz
             // 
@@ -1577,16 +1578,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "姓名";
             // 
-            // addusr
+            // editusr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1001);
             this.Controls.Add(this.black);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "addusr";
-            this.Text = "addusr";
-            this.Load += new System.EventHandler(this.addusr_Load);
+            this.Name = "editusr";
+            this.Text = "editusr";
+            this.Load += new System.EventHandler(this.editusr_Load);
             this.black.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -1614,6 +1614,18 @@
         #endregion
 
         private System.Windows.Forms.Panel black;
+        private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TextBox unjob_time;
+        private System.Windows.Forms.TextBox unjob_job;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label unjob_time_Title;
+        private System.Windows.Forms.DateTimePicker unjob_firstmonth_dtp;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox unjob_id_tb;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.CheckBox cb_unjob;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.DateTimePicker xdry_ccfxrq_dtp;
         private System.Windows.Forms.TextBox xdry_ryxz_tb;
@@ -1631,9 +1643,9 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox xmsfry_fxjyhdq_tb;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox xmsfry_zm_tb;
+        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.CheckBox cb_xfsfry;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -1721,9 +1733,9 @@
         private System.Windows.Forms.TextBox ryxx_p1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox ryinfo_address;
         private System.Windows.Forms.TextBox ryinfo_hjdz;
         private System.Windows.Forms.TextBox ryinfo_edu;
-        private System.Windows.Forms.TextBox ryinfo_address;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -1738,17 +1750,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button close;
-        private System.Windows.Forms.Button save;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox unjob_time;
-        private System.Windows.Forms.Label unjob_time_Title;
-        private System.Windows.Forms.TextBox unjob_job;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DateTimePicker unjob_firstmonth_dtp;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox unjob_id_tb;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.CheckBox cb_unjob;
     }
 }

@@ -37,6 +37,9 @@
     <ApplicationIcon>20150915020009696_easyicon_net_512.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AppLibrary">
+      <HintPath>C:\Users\JamesLi\Downloads\AppLibrary\AppLibrary\AppLibrary\bin\Debug\AppLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>E:\项目\草堂街道社会智能数据管理系统\草堂街道社会智能数据管理系统\bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
@@ -69,6 +72,13 @@
       <DependentUpon>Blocks.cs</DependentUpon>
     </Compile>
     <Compile Include="ComClass\CommonUse.cs" />
+    <Compile Include="editusr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editusr.Designer.cs">
+      <DependentUpon>editusr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\excel.cs" />
     <Compile Include="Map\01草堂\map_ct_grids.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -381,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Blocks.resx">
       <DependentUpon>Blocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editusr.resx">
+      <DependentUpon>editusr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Map\01草堂\map_ct_grids.resx">
       <DependentUpon>map_ct_grids.cs</DependentUpon>
@@ -706,6 +719,27 @@
   <ItemGroup>
     <Content Include="20150915020009696_easyicon_net_512.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

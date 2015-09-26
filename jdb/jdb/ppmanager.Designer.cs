@@ -36,12 +36,14 @@ namespace jdb
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ppmanager));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.返回ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.cb_block = new System.Windows.Forms.CheckBox();
             this.cbox_grid = new System.Windows.Forms.CheckBox();
             this.cbox_sssq = new System.Windows.Forms.CheckBox();
@@ -54,7 +56,7 @@ namespace jdb
             this.cb_old_k = new System.Windows.Forms.CheckBox();
             this.cb_cjr_j = new System.Windows.Forms.CheckBox();
             this.cb_dope = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.cb_jwry = new System.Windows.Forms.CheckBox();
             this.cb_xmry = new System.Windows.Forms.CheckBox();
             this.cb_jz = new System.Windows.Forms.CheckBox();
             this.cb_dbry = new System.Windows.Forms.CheckBox();
@@ -92,13 +94,16 @@ namespace jdb
             this.poor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dope = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.back = new System.Windows.Forms.Panel();
-            this.导出EXCELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导入EXCELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCEL导入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.back.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,8 +112,7 @@ namespace jdb
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.返回ToolStripMenuItem,
             this.添加人员ToolStripMenuItem,
-            this.导出EXCELToolStripMenuItem,
-            this.导入EXCELToolStripMenuItem});
+            this.eXCEL导入ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 2, 6);
@@ -139,6 +143,7 @@ namespace jdb
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.cb_block);
             this.groupBox1.Controls.Add(this.cbox_grid);
             this.groupBox1.Controls.Add(this.cbox_sssq);
@@ -151,7 +156,7 @@ namespace jdb
             this.groupBox1.Controls.Add(this.cb_old_k);
             this.groupBox1.Controls.Add(this.cb_cjr_j);
             this.groupBox1.Controls.Add(this.cb_dope);
-            this.groupBox1.Controls.Add(this.checkBox8);
+            this.groupBox1.Controls.Add(this.cb_jwry);
             this.groupBox1.Controls.Add(this.cb_xmry);
             this.groupBox1.Controls.Add(this.cb_jz);
             this.groupBox1.Controls.Add(this.cb_dbry);
@@ -168,10 +173,20 @@ namespace jdb
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(3, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1891, 158);
+            this.groupBox1.Size = new System.Drawing.Size(1891, 141);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "人员管理";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(984, 112);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 23);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "导出EXCEL";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cb_block
             // 
@@ -298,15 +313,15 @@ namespace jdb
             this.cb_dope.Text = "吸毒人员";
             this.cb_dope.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // cb_jwry
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(434, 108);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(72, 16);
-            this.checkBox8.TabIndex = 17;
-            this.checkBox8.Text = "境外人员";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.cb_jwry.AutoSize = true;
+            this.cb_jwry.Location = new System.Drawing.Point(434, 108);
+            this.cb_jwry.Name = "cb_jwry";
+            this.cb_jwry.Size = new System.Drawing.Size(72, 16);
+            this.cb_jwry.TabIndex = 17;
+            this.cb_jwry.Text = "境外人员";
+            this.cb_jwry.UseVisualStyleBackColor = true;
             // 
             // cb_xmry
             // 
@@ -452,7 +467,7 @@ namespace jdb
             this.groupBox2.Controls.Add(this.dgv);
             this.groupBox2.Location = new System.Drawing.Point(0, 179);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1894, 671);
+            this.groupBox2.Size = new System.Drawing.Size(1894, 550);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             // 
@@ -485,6 +500,7 @@ namespace jdb
             this.poor,
             this.dope,
             this.note});
+            this.dgv.ContextMenuStrip = this.contextMenuStrip1;
             this.dgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgv.Location = new System.Drawing.Point(3, 17);
             this.dgv.MultiSelect = false;
@@ -493,8 +509,11 @@ namespace jdb
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowTemplate.Height = 23;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(1888, 651);
+            this.dgv.Size = new System.Drawing.Size(1888, 530);
             this.dgv.TabIndex = 0;
+            this.dgv.Tag = "edituser";
+            this.dgv.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentDoubleClick);
+            this.dgv.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellMouseEnter);
             // 
             // name
             // 
@@ -681,6 +700,29 @@ namespace jdb
             this.note.Name = "note";
             this.note.ReadOnly = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.删除ToolStripMenuItem,
+            this.编辑ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
+            // 
+            // 编辑ToolStripMenuItem
+            // 
+            this.编辑ToolStripMenuItem.Name = "编辑ToolStripMenuItem";
+            this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.编辑ToolStripMenuItem.Tag = "edituser";
+            this.编辑ToolStripMenuItem.Text = "编辑";
+            this.编辑ToolStripMenuItem.Click += new System.EventHandler(this.编辑ToolStripMenuItem_Click);
+            // 
             // back
             // 
             this.back.Controls.Add(this.groupBox2);
@@ -688,33 +730,25 @@ namespace jdb
             this.back.Dock = System.Windows.Forms.DockStyle.Fill;
             this.back.Location = new System.Drawing.Point(0, 0);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(1904, 853);
+            this.back.Size = new System.Drawing.Size(1904, 761);
             this.back.TabIndex = 0;
             // 
-            // 导出EXCELToolStripMenuItem
+            // eXCEL导入ToolStripMenuItem
             // 
-            this.导出EXCELToolStripMenuItem.Name = "导出EXCELToolStripMenuItem";
-            this.导出EXCELToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.导出EXCELToolStripMenuItem.Text = "导出EXCEL";
-            this.导出EXCELToolStripMenuItem.Visible = false;
-            // 
-            // 导入EXCELToolStripMenuItem
-            // 
-            this.导入EXCELToolStripMenuItem.Name = "导入EXCELToolStripMenuItem";
-            this.导入EXCELToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.导入EXCELToolStripMenuItem.Text = "导入EXCEL";
-            this.导入EXCELToolStripMenuItem.Visible = false;
+            this.eXCEL导入ToolStripMenuItem.Name = "eXCEL导入ToolStripMenuItem";
+            this.eXCEL导入ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
+            this.eXCEL导入ToolStripMenuItem.Text = "EXCEL导入";
+            this.eXCEL导入ToolStripMenuItem.Click += new System.EventHandler(this.eXCEL导入ToolStripMenuItem_Click);
             // 
             // ppmanager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 853);
+            this.ClientSize = new System.Drawing.Size(1904, 761);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.back);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ppmanager";
-            this.Text = "ppmanager";
             this.Load += new System.EventHandler(this.ppmanager_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -722,6 +756,7 @@ namespace jdb
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.back.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -745,7 +780,7 @@ namespace jdb
         private CheckBox cb_old_k;
         private CheckBox cb_cjr_j;
         private CheckBox cb_dope;
-        private CheckBox checkBox8;
+        private CheckBox cb_jwry;
         private CheckBox cb_xmry;
         private CheckBox cb_jz;
         private CheckBox cb_dbry;
@@ -784,7 +819,10 @@ namespace jdb
         private DataGridViewTextBoxColumn dope;
         private DataGridViewTextBoxColumn note;
         private Panel back;
-        private ToolStripMenuItem 导出EXCELToolStripMenuItem;
-        private ToolStripMenuItem 导入EXCELToolStripMenuItem;
+        private Button button2;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem 删除ToolStripMenuItem;
+        private ToolStripMenuItem 编辑ToolStripMenuItem;
+        private ToolStripMenuItem eXCEL导入ToolStripMenuItem;
     }
 }

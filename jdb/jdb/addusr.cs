@@ -291,6 +291,10 @@ namespace jdb
             Dictionary<string, string> fid = new Dictionary<string, string>();
             List<string> l_strform = new List<string>();
             List<string> l_strobj = new List<string>();
+            if (ryinfo_card_id.Text.Trim()=="" && jwry_zjhm_tb.Text.Trim() == "")
+            {
+                MessageBox.Show("身份证或者境外人员证件号码不能为空", "软件提示");return;
+            }
             if (feature != 0)
             {
                 if (cb_czrk.Checked)
@@ -314,7 +318,7 @@ namespace jdb
                 //残疾人特性添加
                 if (cb_handicapped.Checked)
                 {
-                    strcmd = "INSERT INTO `handicapped` ( `handicapped_id`, `handicapped_type`, `handicapped_level`, `guardian_name`, `guardian_relationship`) VALUES ('" + tb_cjz.Text.Trim() + "', '" + rebool(cb_feature.SelectedItem.ToString(), "肢体") + "', '" + tb_dj.Text.Trim() + "', '" + tb_jkr.Text.Trim() + "', '" + tb_gx.Text.Trim() + "')" + "; select @@identity AS id"; ;
+                    strcmd = "INSERT INTO `handicapped` ( `handicapped_id`, `handicapped_type`, `handicapped_level`, `guardian_name`, `guardian_relationship`) VALUES ('" + tb_cjz.Text.Trim() + "', '" + rebool(cb_feature.SelectedItem.ToString(), "肢体") + "', '" + tb_dj.Text.Trim() + "', '" + tb_jkr.Text.Trim() + "', '" + tb_gx.Text.Trim() + "')" + "; select @@identity AS id"; 
                     sid = db.GetSingleObject(strcmd).ToString();
                     fid.Add("handicapped", sid);
                 }
@@ -413,7 +417,7 @@ namespace jdb
             item block = (item)cb_block.SelectedItem;
             if (sid == "" || sid == "0")
             {
-                strcmd = "INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`) VALUES('" + ryinfo_card_id.Text + "', '" + tb_names.Text + "', '" + ryinfo_age.Value.ToString() + "', '" + ryinfo_address.Text + "', '" + rebool(ryinfo_sex.SelectedItem.ToString(), "男") + "', '" + ryinfo_hjdz.Text + "', '" + block.Value + "', '" + ryinfo_note.Text + "', '" + ryinfo_edu.Text + "')" + "; select @@identity AS id";
+                strcmd = "INSERT INTO `population` (`card_id`, `name`, `age`, `address`, `gender`, `census_address`, `block`, `note`, `educational`,`features`) VALUES('" + ryinfo_card_id.Text + "', '" + tb_names.Text + "', '" + ryinfo_age.Value.ToString() + "', '" + ryinfo_address.Text + "', '" + rebool(ryinfo_sex.SelectedItem.ToString(), "男") + "', '" + ryinfo_hjdz.Text + "', '" + block.Value + "', '" + ryinfo_note.Text + "', '" + ryinfo_edu.Text + "','0')" + "; select @@identity AS id";
             }
             else
             {
@@ -472,6 +476,24 @@ namespace jdb
             }
            
 
+
+        }
+
+        private void cb_old_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_old.Checked)
+            {
+                cb_alone.Enabled = true;
+            }
+            else
+            {
+                cb_alone.Checked = false;
+                cb_alone.Enabled = true;
+            }
+        }
+
+        private void cb_street_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

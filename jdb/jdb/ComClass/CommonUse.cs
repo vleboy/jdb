@@ -186,7 +186,20 @@ namespace jdb.ComClass
                         MapMain.Show();
                     }
                     break;
-                
+                case "edituser":
+                    {
+                        editusr edit = new editusr();
+                        edit.MdiParent = form;
+                        edit.StartPosition = FormStartPosition.CenterScreen;
+                        edit.Tag = ob;
+                        edit.WindowState = FormWindowState.Normal;
+                        edit.main = form;
+                        edit.pid = par[0];
+                        edit.Show();
+                    }
+                    break;
+
+
             }
         }
         public void ShowForm(string ob, Main form)

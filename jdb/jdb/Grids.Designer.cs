@@ -911,7 +911,6 @@ namespace jdb
             this.Controls.Add(this.black);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Grids";
-            this.Text = "Grids";
             this.Load += new System.EventHandler(this.Grids_Load);
             this.black.ResumeLayout(false);
             this.black.PerformLayout();
