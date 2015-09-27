@@ -73,8 +73,11 @@ namespace jdb
             if (this.main.qx)
             {
                 this.添加人员ToolStripMenuItem.Visible = true;
+                this.eXCEL导入ToolStripMenuItem.Visible = true;
+                this.编辑ToolStripMenuItem.Visible = true;
+                this.删除ToolStripMenuItem.Visible = true;
             }
-
+            
 
 
 

@@ -718,6 +718,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="20150915020009696_easyicon_net_512.ico" />
+    <None Include="Resources\gezi15.jpg" />
+    <None Include="Resources\gezi14.jpg" />
+    <None Include="Resources\gezi13.jpg" />
+    <None Include="Resources\gezi12.jpg" />
+    <None Include="Resources\gezi11.jpg" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Office">

@@ -166,15 +166,17 @@ namespace jdb
             this.black.Controls.Add(this.flowLayoutPanel1);
             this.black.Dock = System.Windows.Forms.DockStyle.Fill;
             this.black.Location = new System.Drawing.Point(0, 0);
+            this.black.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.black.Name = "black";
-            this.black.Size = new System.Drawing.Size(1904, 1041);
+            this.black.Size = new System.Drawing.Size(1904, 1040);
             this.black.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(291, 120);
+            this.button1.Location = new System.Drawing.Point(290, 120);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(74, 23);
             this.button1.TabIndex = 239;
             this.button1.Text = "返回";
             this.button1.UseVisualStyleBackColor = true;
@@ -237,7 +239,7 @@ namespace jdb
             this.laUnemploymentValue.AutoSize = true;
             this.laUnemploymentValue.BackColor = System.Drawing.Color.White;
             this.laUnemploymentValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laUnemploymentValue.Location = new System.Drawing.Point(1192, 687);
+            this.laUnemploymentValue.Location = new System.Drawing.Point(1192, 686);
             this.laUnemploymentValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnemploymentValue.Name = "laUnemploymentValue";
             this.laUnemploymentValue.Size = new System.Drawing.Size(68, 38);
@@ -367,7 +369,7 @@ namespace jdb
             this.laMobilePopulationValue.AutoSize = true;
             this.laMobilePopulationValue.BackColor = System.Drawing.Color.White;
             this.laMobilePopulationValue.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laMobilePopulationValue.Location = new System.Drawing.Point(1192, 543);
+            this.laMobilePopulationValue.Location = new System.Drawing.Point(1192, 542);
             this.laMobilePopulationValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laMobilePopulationValue.Name = "laMobilePopulationValue";
             this.laMobilePopulationValue.Size = new System.Drawing.Size(84, 31);
@@ -391,7 +393,7 @@ namespace jdb
             this.laUnitValue.AutoSize = true;
             this.laUnitValue.BackColor = System.Drawing.Color.White;
             this.laUnitValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laUnitValue.Location = new System.Drawing.Point(1529, 465);
+            this.laUnitValue.Location = new System.Drawing.Point(1529, 464);
             this.laUnitValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnitValue.Name = "laUnitValue";
             this.laUnitValue.Size = new System.Drawing.Size(68, 38);
@@ -415,7 +417,7 @@ namespace jdb
             this.laUnitTitle.AutoSize = true;
             this.laUnitTitle.BackColor = System.Drawing.Color.White;
             this.laUnitTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laUnitTitle.Location = new System.Drawing.Point(1330, 465);
+            this.laUnitTitle.Location = new System.Drawing.Point(1330, 464);
             this.laUnitTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laUnitTitle.Name = "laUnitTitle";
             this.laUnitTitle.Size = new System.Drawing.Size(133, 38);
@@ -427,7 +429,7 @@ namespace jdb
             this.laHouseTitle.AutoSize = true;
             this.laHouseTitle.BackColor = System.Drawing.Color.White;
             this.laHouseTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laHouseTitle.Location = new System.Drawing.Point(986, 465);
+            this.laHouseTitle.Location = new System.Drawing.Point(986, 464);
             this.laHouseTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laHouseTitle.Name = "laHouseTitle";
             this.laHouseTitle.Size = new System.Drawing.Size(104, 38);
@@ -439,7 +441,7 @@ namespace jdb
             this.laCommunityPopulationValue.AutoSize = true;
             this.laCommunityPopulationValue.BackColor = System.Drawing.Color.White;
             this.laCommunityPopulationValue.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laCommunityPopulationValue.Location = new System.Drawing.Point(519, 536);
+            this.laCommunityPopulationValue.Location = new System.Drawing.Point(518, 536);
             this.laCommunityPopulationValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCommunityPopulationValue.Name = "laCommunityPopulationValue";
             this.laCommunityPopulationValue.Size = new System.Drawing.Size(84, 31);
@@ -463,7 +465,7 @@ namespace jdb
             this.laDopeTitle.AutoSize = true;
             this.laDopeTitle.BackColor = System.Drawing.Color.White;
             this.laDopeTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laDopeTitle.Location = new System.Drawing.Point(303, 683);
+            this.laDopeTitle.Location = new System.Drawing.Point(302, 683);
             this.laDopeTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDopeTitle.Name = "laDopeTitle";
             this.laDopeTitle.Size = new System.Drawing.Size(162, 38);
@@ -515,7 +517,7 @@ namespace jdb
             this.laCleanerTitle.AutoSize = true;
             this.laCleanerTitle.BackColor = System.Drawing.Color.White;
             this.laCleanerTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laCleanerTitle.Location = new System.Drawing.Point(303, 612);
+            this.laCleanerTitle.Location = new System.Drawing.Point(302, 612);
             this.laCleanerTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCleanerTitle.Name = "laCleanerTitle";
             this.laCleanerTitle.Size = new System.Drawing.Size(191, 38);
@@ -567,7 +569,7 @@ namespace jdb
             this.laLowestFmailyTitle.AutoSize = true;
             this.laLowestFmailyTitle.BackColor = System.Drawing.Color.White;
             this.laLowestFmailyTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laLowestFmailyTitle.Location = new System.Drawing.Point(303, 827);
+            this.laLowestFmailyTitle.Location = new System.Drawing.Point(302, 827);
             this.laLowestFmailyTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laLowestFmailyTitle.Name = "laLowestFmailyTitle";
             this.laLowestFmailyTitle.Size = new System.Drawing.Size(162, 38);
@@ -645,7 +647,7 @@ namespace jdb
             this.laHandicappedTitle.AutoSize = true;
             this.laHandicappedTitle.BackColor = System.Drawing.Color.White;
             this.laHandicappedTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laHandicappedTitle.Location = new System.Drawing.Point(303, 756);
+            this.laHandicappedTitle.Location = new System.Drawing.Point(302, 756);
             this.laHandicappedTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laHandicappedTitle.Name = "laHandicappedTitle";
             this.laHandicappedTitle.Size = new System.Drawing.Size(133, 38);
@@ -683,7 +685,7 @@ namespace jdb
             this.laCommunityPopulationTitle.AutoSize = true;
             this.laCommunityPopulationTitle.BackColor = System.Drawing.Color.White;
             this.laCommunityPopulationTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laCommunityPopulationTitle.Location = new System.Drawing.Point(303, 533);
+            this.laCommunityPopulationTitle.Location = new System.Drawing.Point(302, 533);
             this.laCommunityPopulationTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laCommunityPopulationTitle.Name = "laCommunityPopulationTitle";
             this.laCommunityPopulationTitle.Size = new System.Drawing.Size(162, 38);
@@ -695,7 +697,7 @@ namespace jdb
             this.laFamilyValue.AutoSize = true;
             this.laFamilyValue.BackColor = System.Drawing.Color.White;
             this.laFamilyValue.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laFamilyValue.Location = new System.Drawing.Point(857, 465);
+            this.laFamilyValue.Location = new System.Drawing.Point(857, 464);
             this.laFamilyValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laFamilyValue.Name = "laFamilyValue";
             this.laFamilyValue.Size = new System.Drawing.Size(84, 31);
@@ -731,7 +733,7 @@ namespace jdb
             this.laYardTitle.AutoSize = true;
             this.laYardTitle.BackColor = System.Drawing.Color.White;
             this.laYardTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laYardTitle.Location = new System.Drawing.Point(303, 462);
+            this.laYardTitle.Location = new System.Drawing.Point(302, 462);
             this.laYardTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laYardTitle.Name = "laYardTitle";
             this.laYardTitle.Size = new System.Drawing.Size(133, 38);
@@ -743,7 +745,8 @@ namespace jdb
             this.laTitle.AutoSize = true;
             this.laTitle.BackColor = System.Drawing.Color.White;
             this.laTitle.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laTitle.Location = new System.Drawing.Point(789, 181);
+            this.laTitle.Location = new System.Drawing.Point(788, 181);
+            this.laTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laTitle.Name = "laTitle";
             this.laTitle.Size = new System.Drawing.Size(370, 46);
             this.laTitle.TabIndex = 136;
@@ -755,6 +758,7 @@ namespace jdb
             this.laDwsjTitle.BackColor = System.Drawing.Color.White;
             this.laDwsjTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjTitle.Location = new System.Drawing.Point(322, 278);
+            this.laDwsjTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjTitle.Name = "laDwsjTitle";
             this.laDwsjTitle.Size = new System.Drawing.Size(220, 38);
             this.laDwsjTitle.TabIndex = 137;
@@ -766,6 +770,7 @@ namespace jdb
             this.laDwsjValue.BackColor = System.Drawing.Color.White;
             this.laDwsjValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjValue.Location = new System.Drawing.Point(606, 278);
+            this.laDwsjValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjValue.Name = "laDwsjValue";
             this.laDwsjValue.Size = new System.Drawing.Size(75, 38);
             this.laDwsjValue.TabIndex = 138;
@@ -777,6 +782,7 @@ namespace jdb
             this.laDwsjTelTitle.BackColor = System.Drawing.Color.White;
             this.laDwsjTelTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjTelTitle.Location = new System.Drawing.Point(751, 278);
+            this.laDwsjTelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjTelTitle.Name = "laDwsjTelTitle";
             this.laDwsjTelTitle.Size = new System.Drawing.Size(133, 38);
             this.laDwsjTelTitle.TabIndex = 139;
@@ -788,6 +794,7 @@ namespace jdb
             this.laDwsjTelValue.BackColor = System.Drawing.Color.White;
             this.laDwsjTelValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjTelValue.Location = new System.Drawing.Point(890, 278);
+            this.laDwsjTelValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjTelValue.Name = "laDwsjTelValue";
             this.laDwsjTelValue.Size = new System.Drawing.Size(204, 38);
             this.laDwsjTelValue.TabIndex = 140;
@@ -799,6 +806,7 @@ namespace jdb
             this.laDwsjPhoneTitle.BackColor = System.Drawing.Color.White;
             this.laDwsjPhoneTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjPhoneTitle.Location = new System.Drawing.Point(1226, 278);
+            this.laDwsjPhoneTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjPhoneTitle.Name = "laDwsjPhoneTitle";
             this.laDwsjPhoneTitle.Size = new System.Drawing.Size(162, 38);
             this.laDwsjPhoneTitle.TabIndex = 141;
@@ -810,6 +818,7 @@ namespace jdb
             this.laDwsjPhoneValue.BackColor = System.Drawing.Color.White;
             this.laDwsjPhoneValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laDwsjPhoneValue.Location = new System.Drawing.Point(1394, 278);
+            this.laDwsjPhoneValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laDwsjPhoneValue.Name = "laDwsjPhoneValue";
             this.laDwsjPhoneValue.Size = new System.Drawing.Size(204, 38);
             this.laDwsjPhoneValue.TabIndex = 142;
@@ -821,6 +830,7 @@ namespace jdb
             this.laJwhzrTitle.BackColor = System.Drawing.Color.White;
             this.laJwhzrTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrTitle.Location = new System.Drawing.Point(322, 335);
+            this.laJwhzrTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrTitle.Name = "laJwhzrTitle";
             this.laJwhzrTitle.Size = new System.Drawing.Size(249, 38);
             this.laJwhzrTitle.TabIndex = 143;
@@ -832,6 +842,7 @@ namespace jdb
             this.laJwhzrValue.BackColor = System.Drawing.Color.White;
             this.laJwhzrValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrValue.Location = new System.Drawing.Point(606, 335);
+            this.laJwhzrValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrValue.Name = "laJwhzrValue";
             this.laJwhzrValue.Size = new System.Drawing.Size(75, 38);
             this.laJwhzrValue.TabIndex = 144;
@@ -843,6 +854,7 @@ namespace jdb
             this.laJwhzrTelTitle.BackColor = System.Drawing.Color.White;
             this.laJwhzrTelTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrTelTitle.Location = new System.Drawing.Point(751, 335);
+            this.laJwhzrTelTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrTelTitle.Name = "laJwhzrTelTitle";
             this.laJwhzrTelTitle.Size = new System.Drawing.Size(133, 38);
             this.laJwhzrTelTitle.TabIndex = 145;
@@ -854,6 +866,7 @@ namespace jdb
             this.laJwhzrTelValue.BackColor = System.Drawing.Color.White;
             this.laJwhzrTelValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrTelValue.Location = new System.Drawing.Point(890, 335);
+            this.laJwhzrTelValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrTelValue.Name = "laJwhzrTelValue";
             this.laJwhzrTelValue.Size = new System.Drawing.Size(204, 38);
             this.laJwhzrTelValue.TabIndex = 146;
@@ -865,6 +878,7 @@ namespace jdb
             this.laJwhzrPhoneTitle.BackColor = System.Drawing.Color.White;
             this.laJwhzrPhoneTitle.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrPhoneTitle.Location = new System.Drawing.Point(1226, 335);
+            this.laJwhzrPhoneTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrPhoneTitle.Name = "laJwhzrPhoneTitle";
             this.laJwhzrPhoneTitle.Size = new System.Drawing.Size(162, 38);
             this.laJwhzrPhoneTitle.TabIndex = 147;
@@ -876,6 +890,7 @@ namespace jdb
             this.laJwhzrPhoneValue.BackColor = System.Drawing.Color.White;
             this.laJwhzrPhoneValue.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.laJwhzrPhoneValue.Location = new System.Drawing.Point(1394, 335);
+            this.laJwhzrPhoneValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laJwhzrPhoneValue.Name = "laJwhzrPhoneValue";
             this.laJwhzrPhoneValue.Size = new System.Drawing.Size(204, 38);
             this.laJwhzrPhoneValue.TabIndex = 148;
@@ -886,7 +901,7 @@ namespace jdb
             this.laNetRange.AutoSize = true;
             this.laNetRange.BackColor = System.Drawing.Color.White;
             this.laNetRange.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.laNetRange.Location = new System.Drawing.Point(322, 386);
+            this.laNetRange.Location = new System.Drawing.Point(322, 391);
             this.laNetRange.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laNetRange.Name = "laNetRange";
             this.laNetRange.Size = new System.Drawing.Size(133, 38);
@@ -896,10 +911,12 @@ namespace jdb
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(504, 386);
+            this.flowLayoutPanel1.Font = new System.Drawing.Font("宋体", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(504, 392);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(20, 0, 180, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1106, 46);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1106, 34);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlAdded);
             // 
@@ -907,9 +924,10 @@ namespace jdb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1904, 1040);
             this.Controls.Add(this.black);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Grids";
             this.Load += new System.EventHandler(this.Grids_Load);
             this.black.ResumeLayout(false);

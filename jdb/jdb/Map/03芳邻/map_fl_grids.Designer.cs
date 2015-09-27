@@ -45,12 +45,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::jdb.Properties.Resources.gezi14;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.mytm10);
             this.panel1.Controls.Add(this.mytm9);
@@ -173,11 +176,11 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(1305, 74);
+            this.label1.Font = new System.Drawing.Font("幼圆", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(1305, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(557, 500);
+            this.label1.Size = new System.Drawing.Size(557, 316);
             this.label1.TabIndex = 6;
             this.label1.Text = "芳邻路社区东以芳邻路东侧街沿为界，南以大石东路、大石西路街心为界，西以望仙场街、科联路为界，北以锦江府南河河沿为界。社区总面积0.68平方公里，主要街道有：芳邻路" +
     "、科联路、大石西路、大石东路、百卉路、一环路西一段、望仙场街、百花西路。美丽恬静的百花潭公园、远近闻名的芳邻路酒吧一条街、高雅的住宅小区如颗颗明珠镶嵌其中。";
@@ -195,12 +198,24 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::jdb.Properties.Resources.gezi14;
             this.pictureBox1.Image = global::jdb.Properties.Resources.map_fx;
             this.pictureBox1.Location = new System.Drawing.Point(153, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1117, 961);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("幼圆", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(1435, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(309, 56);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "芳邻路社区";
             // 
             // map_fl_grids
             // 
@@ -213,6 +228,7 @@
             this.Text = "map_fl_grids";
             this.Load += new System.EventHandler(this.map_fl_grids_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -235,5 +251,6 @@
         private TM.mytm mytm2;
         private TM.mytm mytm1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -39,6 +39,9 @@ namespace jdb.ComClass
             streetid = db.GetSingleObject("SELECT street.streetId FROM street INNER JOIN block ON street.blockId = block.id WHERE block.id = " + this.block).ToString();
             this.dangValue.Text = db.GetSingleObject("SELECT streetmanager.secretary FROM street INNER JOIN streetmanager ON streetmanager.streetId = street.streetId WHERE street.streetId = "+streetid).ToString();
             this.shujiValue.Text = db.GetSingleObject("SELECT streetmanager.teamName FROM street INNER JOIN streetmanager ON streetmanager.streetId = street.streetId WHERE street.streetId = " + streetid).ToString();
+
+
+
             laFamilyValue.Text = db.GetSingleObject("SELECT Count(population.`name`) FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id INNER JOIN features ON population.features = features.id INNER JOIN resident ON features.resident = resident.id INNER JOIN residentaddresss ON resident.resident_addresss = residentaddresss.id WHERE residentaddresss.`host` = '1' AND block.id = " + this.block).ToString();
             laCommunityPopulationValue.Text = db.GetSingleObject("SELECT Count(population.`name`) FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id WHERE block.id = " + this.block).ToString();
             laFamilyPopulationValue.Text = db.GetSingleObject("SELECT Count(resident.id) FROM district INNER JOIN grid ON grid.district = district.id INNER JOIN block ON block.grid = grid.id INNER JOIN population ON population.block = block.id INNER JOIN features ON population.features = features.id INNER JOIN resident ON features.resident = resident.id WHERE block.id = " + this.block).ToString();

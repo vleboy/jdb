@@ -112,15 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>草堂街道位于成都市中心城区西南部，建制于2001年10月，得名于辖区内驰名中外的旅游胜地“杜甫草堂”。草堂街道辖区面积3.1平方公里，有大、中、小街道36条，居民19195户，户籍人口约7万余人，辖草堂路、琴台路、芳邻路和送仙桥4个社区。辖区地处成都市都市文化旅游核心区，有杜甫草堂博物馆、青羊宫道观、十二桥商代古建筑遗址、汉唐风貌琴台故径、非遗传承之锦绣工场以及有人文艺术殿堂美誉之称的四川省博物院、四川省诗书画院等。浣花溪公园、百花潭公园、文化公园等城市大型群众休闲绿地星罗棋布，多条河流穿流而过。</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA

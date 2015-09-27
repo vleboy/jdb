@@ -42,6 +42,7 @@ namespace jdb
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.返回ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加人员ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eXCEL导入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.cb_block = new System.Windows.Forms.CheckBox();
@@ -98,7 +99,6 @@ namespace jdb
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.编辑ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.back = new System.Windows.Forms.Panel();
-            this.eXCEL导入ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,6 +137,14 @@ namespace jdb
             this.添加人员ToolStripMenuItem.Text = "添加人员";
             this.添加人员ToolStripMenuItem.Visible = false;
             this.添加人员ToolStripMenuItem.Click += new System.EventHandler(this.添加人员ToolStripMenuItem_Click_1);
+            // 
+            // eXCEL导入ToolStripMenuItem
+            // 
+            this.eXCEL导入ToolStripMenuItem.Name = "eXCEL导入ToolStripMenuItem";
+            this.eXCEL导入ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
+            this.eXCEL导入ToolStripMenuItem.Text = "EXCEL导入";
+            this.eXCEL导入ToolStripMenuItem.Visible = false;
+            this.eXCEL导入ToolStripMenuItem.Click += new System.EventHandler(this.eXCEL导入ToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -713,6 +721,7 @@ namespace jdb
             this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
             this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.删除ToolStripMenuItem.Text = "删除";
+            this.删除ToolStripMenuItem.Visible = false;
             this.删除ToolStripMenuItem.Click += new System.EventHandler(this.删除ToolStripMenuItem_Click);
             // 
             // 编辑ToolStripMenuItem
@@ -721,6 +730,7 @@ namespace jdb
             this.编辑ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.编辑ToolStripMenuItem.Tag = "edituser";
             this.编辑ToolStripMenuItem.Text = "编辑";
+            this.编辑ToolStripMenuItem.Visible = false;
             this.编辑ToolStripMenuItem.Click += new System.EventHandler(this.编辑ToolStripMenuItem_Click);
             // 
             // back
@@ -732,13 +742,6 @@ namespace jdb
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(1904, 761);
             this.back.TabIndex = 0;
-            // 
-            // eXCEL导入ToolStripMenuItem
-            // 
-            this.eXCEL导入ToolStripMenuItem.Name = "eXCEL导入ToolStripMenuItem";
-            this.eXCEL导入ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.eXCEL导入ToolStripMenuItem.Text = "EXCEL导入";
-            this.eXCEL导入ToolStripMenuItem.Click += new System.EventHandler(this.eXCEL导入ToolStripMenuItem_Click);
             // 
             // ppmanager
             // 

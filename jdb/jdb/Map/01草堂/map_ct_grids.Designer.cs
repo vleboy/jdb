@@ -44,12 +44,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::jdb.Properties.Resources.gezi12;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.mytm9);
             this.panel1.Controls.Add(this.mytm8);
@@ -171,11 +174,11 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(1305, 74);
+            this.label1.Font = new System.Drawing.Font("幼圆", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label1.Location = new System.Drawing.Point(1305, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(557, 500);
+            this.label1.Size = new System.Drawing.Size(557, 207);
             this.label1.TabIndex = 6;
             this.label1.Text = "草堂路社区地处浣花风景区的核心区域，历史文化底蕴深厚，生态环境和谐自然，是成都市的一张历史文化名片和生态宜居名片。社区内拥有久负盛名的杜甫草堂，悠久历史的蜀锦、蜀" +
     "绣，市内最大的生态公园——浣花溪公园，蕴藏着千年文化内涵。 ";
@@ -193,6 +196,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::jdb.Properties.Resources.gezi12;
             this.pictureBox1.Image = global::jdb.Properties.Resources.map_ct;
             this.pictureBox1.Location = new System.Drawing.Point(153, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -200,6 +204,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("幼圆", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label3.Location = new System.Drawing.Point(1435, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(309, 56);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "草堂路社区";
             // 
             // map_ct_grids
             // 
@@ -212,6 +227,7 @@
             this.Text = "map_ct_grids";
             this.Load += new System.EventHandler(this.map_ct_grids_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -233,5 +249,6 @@
         private TM.mytm mytm3;
         private TM.mytm mytm1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -39,12 +39,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::jdb.Properties.Resources.gezi11;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.mytm4);
             this.panel1.Controls.Add(this.mytm3);
@@ -111,11 +115,12 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("幼圆", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(1305, 74);
+            this.label1.Location = new System.Drawing.Point(1318, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(557, 500);
+            this.label1.Size = new System.Drawing.Size(557, 456);
             this.label1.TabIndex = 6;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -132,12 +137,24 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::jdb.Properties.Resources.gezi11;
             this.pictureBox1.Image = global::jdb.Properties.Resources.map;
             this.pictureBox1.Location = new System.Drawing.Point(153, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1117, 946);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("幼圆", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(1465, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(252, 56);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "草堂街道";
             // 
             // MapMainForm
             // 
@@ -149,6 +166,7 @@
             this.Name = "MapMainForm";
             this.Load += new System.EventHandler(this.MapMainForm_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -165,5 +183,6 @@
         private TM.mytm mytm3;
         private TM.mytm mytm2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }

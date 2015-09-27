@@ -112,15 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>送仙桥社区位于西一环路与二环路之间，北以清江东路，南以青华路，东以浣花北路，西以草堂北路为界的一个呈长方形的地域。紧邻闻名于世的具有1200年历史的旅游胜地杜甫草堂，位于浣花溪畔。社区面积0.47平方公里，驻社区的机关企事业单位有：成都勘测设计研究院有限公司、国家统计局四川调查总队、四川省水利科学研究设计院、四川省电力设计院、四川省电力科学研究院、四川省地方电力局、四川省水利科学研究院、成都市青羊邮政局、成都市质量技术监督局青羊分局、成都市青羊区城市管理局行政执法大队、成都市青羊区推进城乡一体化工作局等。社区内有知名的龙抄手、陈麻婆等大小餐馆几十家，有农贸市场2处，医院3家，四川水利干部学校和四川电力职业技术学院2所大专院校，幼儿园3个。</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
